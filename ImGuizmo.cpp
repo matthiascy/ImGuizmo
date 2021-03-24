@@ -2608,7 +2608,7 @@ namespace ImGuizmo
                // draw face with lighter color
                if (iPass)
                {
-                  gContext.mDrawList->AddConvexPolyFilled(faceCoordsScreen, 4, (directionColor[normalIndex] | 0x80808080) | (isInside ? 0x080808 : 0));
+                  gContext.mDrawList->AddConvexPolyFilled(faceCoordsScreen, 4, (directionColor[normalIndex]) | (isInside ? 0x080808 : 0));
                   if (boxes[boxCoordInt])
                   {
                      gContext.mDrawList->AddConvexPolyFilled(faceCoordsScreen, 4, 0x8060A0F0);
